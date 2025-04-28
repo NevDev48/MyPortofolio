@@ -7,12 +7,12 @@
     <title>Portofolio</title>
 </head>
 <body>
-    <nav class="bg-white w-full px-6 py-4 shadow-md z-50">
+    <nav class="bg-white w-full px-6 py-4 shadow-md z-50 fixed top-0 left-0">
         <div class="container">
         <div class="flex justify-between items-center">
             <!-- Logo/Brand -->
             <div class="flex items-center">
-                <span class="text-4xl font-bold tracking-tight font-[chewy]">nevdev</span>
+                <span class="text-4xl font-bold tracking-tight font-]">nevdev</span>
             </div>
 
             <!-- Desktop Navigation -->
@@ -49,21 +49,23 @@
     </div>
     </nav>
 
-    <div class="container mx-auto flex flex-col justify-center items-center min-h-screen mt-10 pb-24">
-        <div class="justify-center items-center">
-            <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob"></div>
-                    <div class="absolute top-4 -right-4 w-72 h-72 bg-yellow-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
-                    <div class="absolute -bottom-8 left-28 w-72 h-72 bg-pink-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
+    <div class="container relative overflow-visible mx-auto flex flex-col justify-center items-center min-h-screen mt-10 pb-24">
+        <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob z-0"></div>
+        <div class="absolute top-3 -right-4 w-72 h-72 bg-yellow-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob animation-delay-2000 z-0"></div>
+        <div class="absolute -bottom-8 left-28 w-72 h-72 bg-pink-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob animation-delay-4000 z-0"></div>
+
+            <div class="justify-center items-center">
             <p class="text-gray-900 flex items-center gap-2" style="font-family: 'Outfit', 'serif'; font-size: 20px;">
-                <img src="src/assets/img/hi.svg" alt="" width="20px">
-                <span class="font-light">Hi! There! I'm Yosia</span>
+                    <img src="src/assets/img/hi.svg" alt="" width="20px">
+                    <span class="font-light">Hi! There! I'm Yosia</span>
             </p>
         </div>
+            
         <div class="justify-center items-center mt-4">
             <h1 class="text-gray-900 font-bold text-center" style="font-size: 100px;">Web Developer</h1>
         </div>
         <div class="justify-center items-center mt-7">
-            <p class="text-gray-900 flex items-center gap-2" style="font-family: 'Outfit', 'serif'; font-size: 20px;">
+            <p class="text-gray-900 flex items-center gap-2" style="font-family: 'Outfit', 'sans-serif'; font-size: 20px;">
                 <span class="font-light text-center">I create beautifully simple websites and designs, and I love what I do. <br>Just simple like that!</span>
             </p>
         </div>
@@ -83,7 +85,7 @@
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <!-- Text Content -->
                 <div class="md:w-1/2 order-2 md:order-1">
-                    <h2 class="text-4xl font-semibold text-gray-900 mb-6 font-['Outfit']">About Me</h2>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6 font-['Outfit']">About Me</h2>
                     <p class="text-gray-900 text-xl font-light font-['Outfit'] mb-6">
                         Hello! I'm Yosia Nevriska Danuarta, a passionate web developer, currently studying Information Technology at Universitas Bumigora. With a fresh perspective and a keen eye for detail, I bring enthusiasm and dedication to every project I undertake.
                     </p>
@@ -100,7 +102,7 @@
     <!-- My Skills Section -->
      <section id="skills mt-20" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-semibold text-gray-900 mb-12 font-['Outfit'] text-center">
+            <h2 class="text-4xl font-semibold text-gray-900 mb-12 font-['Outfit']">
                 My Skills
             </h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -181,12 +183,12 @@
      </section>
 
      <!-- Project Section -->
-     <section class="py-20 bg-black" id="project">
+     <section class="py-20" id="project">
         <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-semibold text-white mb-12 font-['Outfit'] text-center">My Project</h2>
+          <h2 class="text-4xl font-semibold text-black mb-12 font-['Outfit'] ">My Project</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
-              <img src="" alt="" class="rounded-lg shadow-xl w-90 max-w-md border-4 border-gray-400 mb-4">
+              <img src="" alt="" class="rounded-lg shadow-xl w-90 h-90h max-ms max-w-md border-4 border-gray-400 mb-4">
             </div>
           </div>
         </div>

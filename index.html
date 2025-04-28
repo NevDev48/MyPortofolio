@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Portofolio</title>
+</head>
+<body>
+    <nav class="bg-white w-full px-6 py-4 shadow-md z-50">
+        <div class="container">
+        <div class="flex justify-between items-center">
+            <!-- Logo/Brand -->
+            <div class="flex items-center">
+                <span class="text-4xl font-bold tracking-tight font-[chewy]">nevdev</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Home</a>
+                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">About me</a>
+                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">My Skills</a>
+                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Project</a>
+                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Contact</a>
+            </div>
+        
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button class="mobile-menu-button outline-none">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+         
+
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu mt-4">
+            <div class="flex flex-col space-y-3">
+                <a href="#" class="block py-2 text-gray-900">Home</a>
+                <a href="#" class="block py-2 text-gray-900">About me</a>
+                <a href="#" class="block py-2 text-gray-900">Selected Works</a>
+                <a href="#" class="block py-2 text-gray-900">What I do</a>
+                <a href="#" class="block py-2 text-gray-900">Contact</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container mx-auto flex flex-col justify-center items-center min-h-screen mt-10 pb-24">
+        <div class="justify-center items-center">
+            <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob"></div>
+                    <div class="absolute top-4 -right-4 w-72 h-72 bg-yellow-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
+                    <div class="absolute -bottom-8 left-28 w-72 h-72 bg-pink-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
+            <p class="text-gray-900 flex items-center gap-2" style="font-family: 'Outfit', 'serif'; font-size: 20px;">
+                <img src="src/assets/img/hi.svg" alt="" width="20px">
+                <span class="font-light">Hi! There! I'm Yosia</span>
+            </p>
+        </div>
+        <div class="justify-center items-center mt-4">
+            <h1 class="text-gray-900 font-bold text-center" style="font-size: 100px;">Web Developer</h1>
+        </div>
+        <div class="justify-center items-center mt-7">
+            <p class="text-gray-900 flex items-center gap-2" style="font-family: 'Outfit', 'serif'; font-size: 20px;">
+                <span class="font-light text-center">I create beautifully simple websites and designs, and I love what I do. <br>Just simple like that!</span>
+            </p>
+        </div>
+
+        <!-- Button Let's Talk -->
+    <a href="#" class="mt-10 px-8 py-3 bg-black text-white flex justify-between rounded-full text-xl font-medium hover:bg-gray-800 transition duration-300" style="font-family: 'Outfit', 'serif';">
+        <p class="mr-2">Let's Talk</p>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+    </a>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Text Content -->
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-4xl font-semibold text-gray-900 mb-6 font-['Outfit']">About Me</h2>
+                    <p class="text-gray-900 text-xl font-light font-['Outfit'] mb-6">
+                        Hello! I'm Yosia Nevriska Danuarta, a passionate web developer, currently studying Information Technology at Universitas Bumigora. With a fresh perspective and a keen eye for detail, I bring enthusiasm and dedication to every project I undertake.
+                    </p>
+                </div>
+                
+                <!-- Image -->
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <img src="src/assets/img/about.jpg" alt="Profile" class="rounded-lg shadow-xl w-90 max-w-md mx-auto border-4 border-gray-400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills Section -->
+     <section id="skills mt-20" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-gray-900 mb-12 font-['Outfit'] text-center">
+                My Skills
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/html-5-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">HTML</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/css-3-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">CSS</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/js-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">JAVASCRIPT</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/php-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">PHP</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/python-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">PYTHON</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/bootstrap-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">BOOTSTRAP</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/tailwind-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">TAILWIND</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/flutter-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">FLUTTER</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/laravel-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">LARAVEL</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/django-icon-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">DJANGO</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/mysql-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">MYSQL</h3>
+                </div>
+                <div class="border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <img src="src/assets/img/adobe-illustrator-svgrepo-com.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-medium text-gray-800 font-['Outfit']">ADOBE ILLUSTRATOR</h3>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Project Section -->
+     <section class="py-20 bg-black" id="project">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-semibold text-white mb-12 font-['Outfit'] text-center">My Project</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center">
+              <img src="" alt="" class="rounded-lg shadow-xl w-90 max-w-md border-4 border-gray-400 mb-4">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+     <script>
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+    
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body> 
+</html> 

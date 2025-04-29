@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
 /* Local Fonts (Aquire) */
 @font-face {
@@ -23,6 +20,36 @@
   font-family: 'Aquire';
   src: url('../assets/fonts/AquireLight-YzE0o.otf') format('opentype');
   font-weight: 300;
+  font-style: normal;
+}
+
+/* Local fonts (Outfit) */
+/* Local Fonts (Outfit) */
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/Outfit-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/Outfit-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/Outfit-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/Outfit-SemiBold.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
 }
 

@@ -17,11 +17,11 @@
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Home</a>
-                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">About me</a>
-                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">My Skills</a>
-                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Project</a>
-                <a href="#" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Contact</a>
+                <a href="#home" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Home</a>
+                <a href="#about" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">About me</a>
+                <a href="#skills" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">My Skills</a>
+                <a href="#project" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Project</a>
+                <a href="#contact" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Contact</a>
             </div>
         
 
@@ -39,29 +39,29 @@
         <!-- Mobile Menu -->
         <div class="hidden mobile-menu mt-4">
             <div class="flex flex-col space-y-3">
-                <a href="#" class="block py-2 text-gray-900">Home</a>
-                <a href="#" class="block py-2 text-gray-900">About me</a>
-                <a href="#" class="block py-2 text-gray-900">Selected Works</a>
-                <a href="#" class="block py-2 text-gray-900">What I do</a>
-                <a href="#" class="block py-2 text-gray-900">Contact</a>
+                <a href="#home" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Home</a>
+                <a href="#about" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">About me</a>
+                <a href="#skills" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">My Skills</a>
+                <a href="#project" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Project</a>
+                <a href="#contact" class="text-gray-900 hover:text-gray-600 transition" style="font-family: 'Outfit', sans-serif;">Contact</a>
             </div>
         </div>
     </div>
     </nav>
 
-    <div class="container relative overflow-visible mx-auto flex flex-col justify-center items-center min-h-screen mt-20 pb-24">
+    <div id="home" class="container relative overflow-visible mx-auto flex flex-col justify-center items-center min-h-screen mt-20 pb-24">
         <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob z-0"></div>
         <div class="absolute top-3 -right-4 w-72 h-72 bg-yellow-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob animation-delay-2000 z-0"></div>
         <div class="absolute -bottom-8 left-28 w-72 h-72 bg-pink-300 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob animation-delay-4000 z-0"></div>
 
-            <div class="justify-center items-center">
+            <div class="justify-center items-center z9">
             <p class="text-gray-900 flex items-center gap-2" style="font-family: 'Outfit', 'serif'; font-size: 20px;">
                     <img src="src/assets/img/hi.svg" alt="" width="20px">
                     <span class="font-light">Hi! There! I'm Yosia</span>
             </p>
         </div>
             
-        <div class="justify-center items-center mt-4">
+        <div class="justify-center items-center mt-4" style="z-index: 9;">
             <h1 class="text-gray-900 font-bold text-center" style="font-size: 100px;">Web Developer</h1>
         </div>
         <div class="justify-center items-center mt-7">
@@ -101,7 +101,7 @@
     </section>
 
     <!-- My Skills Section -->
-     <section id="skills mt-20" class="py-20">
+     <section id="skills" class="mt-20 py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-semibold text-gray-900 mb-12 font-['Outfit']">
                 My Skills
@@ -197,7 +197,7 @@
                 </p>
             </div>
 
-            <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col">
+            <div class="bg-white border-2 animate-pulse border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 flex flex-col">
                 <img src="src/assets/img/web-lara11.png" alt="" class="rounded-lg start shadow-xl max-ms flex w-full h-full mb-4">
                   <h3 class="text-4xl font-bold text-gray-800 font-['Outfit']">
                     Laravel 11, Filament, Service Repository Pattern: Shoe Web
@@ -229,6 +229,11 @@
                         nevriskayosia@gmail.com
                     </a>
                 </div>
+            </div>
+            <div class="flex justify-center mt-12">
+                <a href="src/assets/cv_yosia.docx" class="mt-10 px-8 py-3 bg-black text-white flex justify-between rounded-full text-xl font-medium hover:bg-gray-800 transition duration-300" style="font-family: 'Outfit', 'serif';">
+                    <p class="mr-2">Get Resume</p>
+                </a>
               </div>
             <div class="flex flex-row  justify-center gap-x-10">
             </div>
@@ -238,25 +243,26 @@
 
     <footer class="bg-black text-white mx-auto py-12 px-4">
         <div class="max-w-screen-xl mx-auto flex flex-col items-center space-y-8">
-            <img src="src/assets/img/Ellipse 984.svg" class="absolute" alt="" width="45%" style="margin-right: 900px; margin-top: 26px;">
+            <img src="src/assets/img/Ellipse 984.svg" class="absolute" alt="" width="45%" style="margin-right: 900px; margin-top: 30px;">
           <!-- Logo -->
           <div class="flex items-center mb-10 space-x-2" style="margin-top: 5px;">
             <span class="text-4xl font-bold tracking-widest">NevDev</span>
           </div>
       
           <!-- Social Media Links -->
-          <div class="flex flex-wrap justify-center mt-10 mb-10 gap-4">
-            <a href="#" class="px-6 py-2 rounded-full border font-['Outfit'] border-white text-sm hover:bg-white hover:text-black transition duration-300">LinkedIn</a>
-            <a href="#" class="px-6 py-2 rounded-full border font-['Outfit'] border-white text-sm hover:bg-white hover:text-black transition duration-300">Instagram</a>
-            <a href="#" class="px-6 py-2 rounded-full border font-['Outfit'] border-white text-sm hover:bg-white hover:text-black transition duration-300">Gmail</a>
-            <a href="#" class="px-6 py-2 rounded-full border font-['Outfit'] border-white text-sm hover:bg-white hover:text-black transition duration-300">GitHub</a>
-          </div>
+        <div class="sosial-media flex justify-between mt-10 mb-10 w-[800px] gap-4" style="z-index: 9;">
+            <a href="https://www.linkedin.com/in/yosianevriska/" target="_blank" class="px-6 py-2 rounded-full border font-['Outfit'] border-white text-sm text-white transition duration-300 transform hover:scale-105 hover:bg-white hover:text-black hover:shadow-lg">LinkedIn</a>
+            <a href="https://www.instagram.com/yosia.nvrska/" target="_blank" class="px-6 py-2 rounded-full border font-['Outfit'] border-white text-sm text-white transition duration-300 transform hover:scale-105 hover:bg-white hover:text-black hover:shadow-lg">Instagram</a>
+            <a href="mailto:nevriskayosia@gmail.com" target="_blank" class="px-6 py-2 rounded-full border font-['Outfit'] border-white text-sm text-white transition duration-300 transform hover:scale-105 hover:bg-white hover:text-black hover:shadow-lg">Gmail</a>
+            <a href="https://github.com/NevDev48" target="_blank" class="px-6 py-2 rounded-full border font-['Outfit'] border-white text-sm text-white transition duration-300 transform hover:scale-105 hover:bg-white hover:text-black hover:shadow-lg">GitHub</a>
+        </div>
+  
       
           <!-- Divider -->
           <div class="w-full h-px bg-gradient-to-r via-gray-50 to-transparent my-6"></div>
       
           <!-- Copyright -->
-          <p class="text-xs text-gray-400 text-center mt-10 mb-10 ">© NevDev. <span class="font-['Outfit']">All Rights Reserved.</span></p>
+          <p class="text-xs text-gray-400 text-center ">&copy; NevDev. <span class="font-['Outfit']">All Rights Reserved.</span></p>
         </div>
       </footer>
       

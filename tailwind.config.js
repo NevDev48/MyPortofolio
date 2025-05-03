@@ -36,5 +36,6 @@ module.exports = {
       };
       addUtilities(newUtilities);
     },
+    require('tailwindcss-filters'),
   ],
 }
